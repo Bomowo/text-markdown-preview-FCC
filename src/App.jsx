@@ -60,11 +60,11 @@ function App() {
 
   return (
     <>
-      <div id="preview" className='preview' dangerouslySetInnerHTML={createMarkUp()}></div>
       <textarea id='editor' 
                 onKeyDown={changeTextArea} 
                 value={text} 
                 onChange={changeTextArea}/>
+      <div id="preview" className='preview' dangerouslySetInnerHTML={createMarkUp()}></div>
     </>
   )
 }
